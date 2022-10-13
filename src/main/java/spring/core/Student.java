@@ -19,11 +19,8 @@ public class Student {
 		this.book = book;
 	}
 	
-	
-	public String reading() {
-		
+	public void reading() {	
 		book.bookName();
 		System.out.println("I am reading.");
-		return "I am not reading.";
 	}
 }

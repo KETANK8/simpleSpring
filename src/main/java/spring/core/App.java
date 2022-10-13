@@ -8,6 +8,7 @@
 
 package spring.core;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,7 +19,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	//SpringApplication.run(App.class);
+    	SpringApplication.run(App.class);
     	ApplicationContext ac =new ClassPathXmlApplicationContext("spring.xml");
     	Student student = (Student)ac.getBean(Student.class);
     	student.reading();
